@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reaction Gifs!? ¯\_(ツ)_/¯</title>
+
+    <!-- Importing css reset, bootstrap, and styles -->
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/yeti/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Container Div -->
+    <div id="container">
+
+    <h1>¯\_(ツ)_/¯</h1>
+
+        <!-- Div for the buttons -->
+
+        <div id="reactButtonsDiv">
+        </div>
+
+        <!-- Form to add new buttons -->
+
+        <form id="react-form">
+            <label for="react-input">Add a reaction</label>
+            <input type="text" id="react-input" required><br>
+            <input class="btn btn-info btn-sm" id="addReact" type="submit reset" value="Submit">
+        </form>
+
+        <!-- Div for where the GIFs appear -->
+        <div id="reactAppearDiv">
+        </div>
+
+    </div> 
+
+
+    <!-- Adding JQuery and the javascript file -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript/app.js"></script>
+
+</body>
+</html>
