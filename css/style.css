@@ -1,3 +1,27 @@
 .btn{
 	margin:5px;
 }
+h1{
+	text-align: center;
+}
+
+#react-form{
+	padding:10px;
+	float: right;
+}
+
+#react-input{
+	margin: 40px 20px;
+	width: 250px;
+}
+
+#reactAppearDiv{
+	margin: 20px;
+	width: 75%;
+}
+
+.reactDiv{
+	float:left;
+	margin:10px;
+}
+

@@ -13,7 +13,7 @@ var reactArray = ['Facepalm', 'FML', 'wow', 'LOL', 'Sassy', 'Eyeroll', 'Nope'];
 
 		for (var i = 0; i < reactArray.length; i++) {
 			var reactButton = $('<button>');
-			reactButton.addClass('btn btn-info btn-sm reactButtonClass');//css class
+			reactButton.addClass('btn btn-info btn-md reactButtonClass');//css class
 			reactButton.attr('data-reactname', reactArray[i]); //data attr for button
 			
 			reactButton.text(reactArray[i]);
@@ -69,16 +69,16 @@ var reactArray = ['Facepalm', 'FML', 'wow', 'LOL', 'Sassy', 'Eyeroll', 'Nope'];
 				//create new image and append data-state attributes
 
 				var reactImage = $('<img>');				
-				reactImage.attr('src', results[i].images.original_still.url);
-				reactImage.attr('data-still', results[i].images.original_still.url);
-				reactImage.attr('data-animate', results[i].images.original.url);
+				reactImage.attr('src', results[i].images.fixed_height_still.url);
+				reactImage.attr('data-still', results[i].images.fixed_height_still.url);
+				reactImage.attr('data-animate', results[i].images.fixed_height.url);
 				reactImage.attr('data-state', 'still')
 
 				//append rating to images
 
 				reactDiv.append(p);
 				reactDiv.append(reactImage);
-				reactDiv.addClass('reactDivClass');
+				reactDiv.addClass('reactDiv');
 				$('#reactAppearDiv').append(reactDiv);
 			}
 		});
